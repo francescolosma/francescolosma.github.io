@@ -38,7 +38,7 @@ profiles:
   - icon: brands/github
     url: https://github.com/francescolosma
   - icon: brands/linkedin
-    url: www.linkedin.com/in/francesco-losma
+    url: https://www.linkedin.com/in/francesco-losma/
   - icon: academicons/google-scholar
     url: https://scholar.google.com/citations?hl=it&user=Rabv2B8AAAAJ
   - icon: academicons/orcid
@@ -77,17 +77,17 @@ education:
       - lorem ipsum dolor sit amet, consectetur adipiscing elit
       - lorem ipsum dolor sit amet, consectetur adipiscing elit
 
-  - area: BSc Artificial Intelligence
-    institution: Massachusetts Institute of Technology
-    date_start: 2016-01-01
-    date_end: 2020-12-31
-    summary: |
-      GPA: 3.4/4.0
+  - area: BSc in Finance
+    institution: Università Cattolica del Sacro Cuore
+    date_start: 2014-10-01
+    date_end: 2017-10-01
+    #summary: |
+    #  GPA: 3.4/4.0
       
-      Courses included:
-      - lorem ipsum dolor sit amet, consectetur adipiscing elit
-      - lorem ipsum dolor sit amet, consectetur adipiscing elit
-      - lorem ipsum dolor sit amet, consectetur adipiscing elit
+    #  Courses included:
+    #  - lorem ipsum dolor sit amet, consectetur adipiscing elit
+    #   - lorem ipsum dolor sit amet, consectetur adipiscing elit
+    #  - lorem ipsum dolor sit amet, consectetur adipiscing elit
 
 work:
   - position: Director of Cloud Infrastructure
