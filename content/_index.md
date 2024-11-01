@@ -54,8 +54,8 @@ sections:
           - publication
         featured_only: true
     design:
-      view: article-grid
-      columns: 1
+      view: citation
+      #columns: 1
 
   - block: collection
     content:
