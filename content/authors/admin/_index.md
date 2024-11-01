@@ -34,7 +34,7 @@ profiles:
     url: 'mailto:francesco.losma@economics.ox.ac.uk'
     label: E-mail Me
   - icon: brands/x
-    url: https://twitter.com/GetResearchDev
+    url: https://x.com/FrancescoLosma
   - icon: brands/github
     url: https://github.com/francescolosma
   - icon: brands/linkedin
