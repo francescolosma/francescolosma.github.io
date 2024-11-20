@@ -63,7 +63,7 @@ sections:
       text: ""
       filters:
         folders:
-          - publication
+          - work_in_progress
         exclude_featured: false
     design:
       view: citation
