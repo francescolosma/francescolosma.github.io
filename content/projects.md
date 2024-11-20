@@ -18,7 +18,7 @@ sections:
           - project
     design:
       #view: article-grid
-      view: list
-      fill_image: true
-      #columns: 3
+      view: article-list
+      fill_image: false
+      columns: 1
 ---
