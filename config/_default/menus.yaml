@@ -25,9 +25,9 @@ main:
   #- name: Teaching
   #  url: teaching/
   #  weight: 40
-  - name: Other Writings
-    url: other/
-    weight: 40
-  - name: Photography
-    url: photo/
-    weight: 50
+  #- name: Other Writings
+  #  url: other/
+  #  weight: 40
+  #- name: Photography
+  #  url: photo/
+  #  weight: 50
