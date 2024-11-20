@@ -19,6 +19,6 @@ sections:
     design:
       #view: article-grid
       view: list
-      fill_image: false
-      columns: 3
+      fill_image: true
+      #columns: 3
 ---
