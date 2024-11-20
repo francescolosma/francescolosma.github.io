@@ -52,7 +52,7 @@ sections:
       filters:
         folders:
           - publication
-        featured_only: true
+        featured_only: false
     design:
       view: citation
       #columns: 1
