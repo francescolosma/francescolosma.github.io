@@ -67,6 +67,18 @@ sections:
         exclude_featured: false
     design:
       view: citation
+
+  - block: collection
+    content:
+      title: Work in Progress
+      text: ""
+      filters:
+        folders: 
+          - project
+        exclude_featured: flas
+      design:
+        view: citation
+
   #- block: collection
   #  id: talks
   #  content:
