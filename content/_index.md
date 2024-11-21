@@ -76,7 +76,7 @@ sections:
       filters:
         folders: 
           - project
-        exclude_featured: false
+        exclude_featured: flas
       design:
         view: citation
 
