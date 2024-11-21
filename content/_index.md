@@ -69,6 +69,7 @@ sections:
       view: citation
 
   - block: collection
+    id: current_research
     content:
       title: Work in Progress
       text: ""
