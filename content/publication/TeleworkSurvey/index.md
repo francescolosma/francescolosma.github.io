@@ -1,11 +1,14 @@
 ---
-title: "An example journal article"
+title: "The Role of Telework for Productivity During and Post COVID‑19"
 authors:
+- Chiara Criscuolo
+- Peter Gal
+- Timo Leidecker
 - admin
-- Robert Ford
-author_notes:
-- "Equal contribution"
-- "Equal contribution"
+- Giuseppe Nicoletti
+#author_notes:
+#- "Equal contribution"
+#- "Equal contribution"
 date: "2015-09-01T00:00:00Z"
 doi: ""
 
