@@ -9,6 +9,7 @@ date: 2024-10-22
 ---
 
 What are the labour market consequences of the implementation of AI tools?
-url: uploads/resume.pdf
+
+[Research Proposal](https://francescolosma.github.io/uploads/ResearchProposal_AI_Labour.pdf).
 
 <!--more-->
