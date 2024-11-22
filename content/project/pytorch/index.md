@@ -1,13 +1,14 @@
 ---
-title: PyTorch
-date: 2023-10-26
-external_link: https://github.com/pytorch/pytorch
-tags:
-  - Hugo
-  - Wowchemy
-  - Markdown
+title: AI AND LABOUR MARKET
+date: 2024-10-22
+url: uploads/resume.pdf
+#external_link: https://github.com/pytorch/pytorch
+#tags:
+#  - Hugo
+#  - Wowchemy
+#  - Markdown
 ---
 
-PyTorch is a Python package that provides tensor computation (like NumPy) with strong GPU acceleration.
+What are the labour market consequences of the implementation of AI tools?
 
 <!--more-->
