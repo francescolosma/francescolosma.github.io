@@ -21,10 +21,10 @@ publishDate: "2017-01-01T00:00:00Z"
 publication_types: ["article-journal"]
 
 # Publication name and optional abbreviated publication name.
-publication: "*Journal of Source Themes, 1*(1)"
+publication: "*Economie et Statistique / Economics and Statistics,* 539"
 publication_short: ""
 
-abstract: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis posuere tellus ac convallis placerat. Proin tincidunt magna sed ex sollicitudin condimentum. Sed ac faucibus dolor, scelerisque sollicitudin nisi. Cras purus urna, suscipit quis sapien eu, pulvinar tempor diam. Quisque risus orci, mollis id ante sit amet, gravida egestas nisl. Sed ac tempus magna. Proin in dui enim. Donec condimentum, sem id dapibus fringilla, tellus enim condimentum arcu, nec volutpat est felis vel metus. Vestibulum sit amet erat at nulla eleifend gravida.
+abstract: Motivated by the sudden adoption of telework in the wake of the COVID‑19 pandemic, the OECD Global Forum on Productivity (GFP) undertook an online survey among managers and workers in 25 countries about their experience and expectations on telework, with a particular focus on productivity and well‑being aspects. Respondents had an overall positive assessment from teleworking both for firm performance and for well‑being, and wish to increase the share of teleworkers from pre‑crisis levels. On average, the ideal amount of telework is envisaged around 2‑3 days per week, in line with the idea that the benefits (e.g. less commuting, fewer distractions) and costs (e.g. impaired communication and knowledge flows) are balanced at an intermediate level of telework intensity. Further adaptive changes from management are also needed, such as the coordination of schedules and further investments in ICT tools and skills.
 
 # Summary. An optional shortened abstract.
 summary: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis posuere tellus ac convallis placerat. Proin tincidunt magna sed ex sollicitudin condimentum.
@@ -37,7 +37,7 @@ featured: false
 # - name: ""
 #   url: ""
 url_pdf: http://arxiv.org/pdf/1512.04133v1
-url_code: 'https://github.com/HugoBlox/hugo-blox-builder'
+url_code: ''
 url_dataset: ''
 url_poster: ''
 url_project: ''
