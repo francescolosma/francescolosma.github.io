@@ -19,9 +19,9 @@ main:
   - name: Current Research
     url: /#current_research
     weight: 12
-  - name: Experience
-    url: experience/
-    weight: 20
+  #name: Experience
+  #  url: experience/
+  #  weight: 20
   #- name: Teaching
   #  url: teaching/
   #  weight: 40
