@@ -1,19 +1,16 @@
 ---
-title: "The Role of Telework for Productivity During and Post COVID-19"
+title: "An example journal article"
 authors:
-- Chiara Criscuolo
-- Peter Gal
-- Timo Leidecker
 - admin
-- Giuseppe Nicoletti
+- Robert Ford
 author_notes:
 - "Equal contribution"
 - "Equal contribution"
-date: "2023"
-doi: "10.24187/ecostat.2023.539.2097"
+date: "2015-09-01T00:00:00Z"
+doi: ""
 
 # Schedule page publish date (NOT publication's date).
-#publishDate: "2017-01-01T00:00:00Z"
+publishDate: "2017-01-01T00:00:00Z"
 
 # Publication type.
 # Accepts a single type but formatted as a YAML list (for Hugo requirements).
@@ -21,10 +18,10 @@ doi: "10.24187/ecostat.2023.539.2097"
 publication_types: ["article-journal"]
 
 # Publication name and optional abbreviated publication name.
-publication: "*Economie et Statistique / Economics and Statistics, 539*"
+publication: "*Journal of Source Themes, 1*(1)"
 publication_short: ""
 
-abstract: Motivated by the sudden adoption of telework in the wake of the COVID‑19 pandemic, the OECD Global Forum on Productivity (GFP) undertook an online survey among managers and workers in 25 countries about their experience and expectations on telework, with a particular focus on productivity and well‑being aspects. Respondents had an overall positive assessment from teleworking both for firm performance and for well‑being, and wish to increase the share of teleworkers from pre‑crisis levels. On average, the ideal amount of telework is envisaged around 2‑3 days per week, in line with the idea that the benefits (e.g. less commuting, fewer distractions) and costs (e.g. impaired communication and knowledge flows) are balanced at an intermediate level of telework intensity. Further adaptive changes from management are also needed, such as the coordination of schedules and further investments in ICT tools and skills.
+abstract: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis posuere tellus ac convallis placerat. Proin tincidunt magna sed ex sollicitudin condimentum. Sed ac faucibus dolor, scelerisque sollicitudin nisi. Cras purus urna, suscipit quis sapien eu, pulvinar tempor diam. Quisque risus orci, mollis id ante sit amet, gravida egestas nisl. Sed ac tempus magna. Proin in dui enim. Donec condimentum, sem id dapibus fringilla, tellus enim condimentum arcu, nec volutpat est felis vel metus. Vestibulum sit amet erat at nulla eleifend gravida.
 
 # Summary. An optional shortened abstract.
 summary: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis posuere tellus ac convallis placerat. Proin tincidunt magna sed ex sollicitudin condimentum.
@@ -36,8 +33,8 @@ featured: false
 # links:
 # - name: ""
 #   url: ""
-url_pdf: https://www.insee.fr/en/statistiques/fichier/7647321/03_ES539_Criscuolo-et-al_EN.pdf
-#url_code: 'https://github.com/HugoBlox/hugo-blox-builder'
+url_pdf: http://arxiv.org/pdf/1512.04133v1
+url_code: 'https://github.com/HugoBlox/hugo-blox-builder'
 url_dataset: ''
 url_poster: ''
 url_project: ''
@@ -48,7 +45,7 @@ url_video: ''
 # Featured image
 # To use, add an image named `featured.jpg/png` to your page's folder. 
 image:
-  caption: ''
+  caption: 'Image credit: [**Unsplash**](https://unsplash.com/photos/jdD8gXaTZsc)'
   focal_point: ""
   preview_only: false
 
@@ -65,14 +62,14 @@ projects: []
 #   E.g. `slides: "example"` references `content/slides/example/index.md`.
 #   Otherwise, set `slides: ""`.
 slides: example
-#---
+---
 
-#{{% callout note %}}
-#Click the *Cite* button above to demo the feature to enable visitors to import publication metadata into their reference management software.
-#{{% /callout %}}
+{{% callout note %}}
+Click the *Cite* button above to demo the feature to enable visitors to import publication metadata into their reference management software.
+{{% /callout %}}
 
-#{{% callout note %}}
-#Create your slides in Markdown - click the *Slides* button to check out the example.
-#{{% /callout %}}
+{{% callout note %}}
+Create your slides in Markdown - click the *Slides* button to check out the example.
+{{% /callout %}}
 
-#Add the publication's **full text** or **supplementary notes** here. You can use rich formatting such as including [code, math, and images](https://docs.hugoblox.com/content/writing-markdown-latex/).
+Add the publication's **full text** or **supplementary notes** here. You can use rich formatting such as including [code, math, and images](https://docs.hugoblox.com/content/writing-markdown-latex/).
