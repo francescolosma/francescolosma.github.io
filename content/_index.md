@@ -57,16 +57,16 @@ sections:
       view: citation
       #columns: 1
 
-  - block: collection
-    content:
-      title: Working Papers
-      text: ""
-      filters:
-        folders:
-          - working_papers
-        exclude_featured: false
-    design:
-      view: citation
+  #- block: collection
+  #  content:
+  #     title: Working Papers
+  #    text: ""
+  #    filters:
+  #      folders:
+  #        - working_papers
+  #      exclude_featured: false
+  #  design:
+  #    view: citation
 
   - block: collection
     id: current_research
