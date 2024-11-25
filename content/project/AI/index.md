@@ -8,8 +8,8 @@ date: 2024-10-22
 #  - Markdown
 ---
 
-What are the labour market consequences of the implementation of AI tools? This research explores the economic impact of artificial intelligence (AI), particularly generative AI tools like GPTs, on labour markets. It examines AI's potential to alter job dynamics across skill levels, enhance productivity, and drive innovation. The study identifies key gaps, such as the effects on career trajectories, worker displacement, and inequality, while proposing a randomized controlled trial in developing economies to assess these dynamics. By analyzing AI's integration into workplaces, the research seeks to inform policy on leveraging AI for equitable growth and productivity improvements.
+What are the labour market consequences of the implementation of AI tools? This research aims to explore the economic impact of artificial intelligence (AI), particularly generative AI tools like GPTs, on labour markets. It examines AI's potential to alter job dynamics across skill levels, enhance productivity, and drive innovation.
 
-Read my [research roposal](https://francescolosma.github.io/uploads/ResearchProposal_AI_Labour.pdf).
+Read my [research proposal](https://francescolosma.github.io/uploads/ResearchProposal_AI_Labour.pdf).
 
 <!--more-->
