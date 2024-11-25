@@ -1,6 +1,6 @@
 ---
 title: AI AND LABOUR MARKET
-date: 2024-10-22
+date: 2024-11-25
 #external_link: https://github.com/pytorch/pytorch
 #tags:
 #  - Hugo
