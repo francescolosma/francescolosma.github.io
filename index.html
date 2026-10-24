@@ -190,16 +190,6 @@
       </section>
     </main>
 
-    <script>
-      // Abstract buttons show/hide the abstract right after their row of buttons
-      document.querySelectorAll(".abstract-toggle").forEach((button) => {
-        const abstract = button.closest(".buttons").nextElementSibling;
-        button.addEventListener("click", () => {
-          const open = button.getAttribute("aria-expanded") === "true";
-          button.setAttribute("aria-expanded", String(!open));
-          abstract.hidden = open;
-        });
-      });
-    </script>
+    <script src="site.js"></script>
   </body>
 </html>

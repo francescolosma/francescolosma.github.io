@@ -11,6 +11,7 @@ Plain HTML/CSS, no build step: open `index.html` in a browser to preview. The wh
 | Photo                                        | replace `images/profile.jpg` (square)  |
 | CV                                           | edit it on Overleaf (see below)        |
 | Colours and fonts                            | top of `styles.css`                    |
+| Links opening in a new tab, Abstract buttons | `site.js` (shared by every page)       |
 
 To add a paper, copy an `<article class="paper">` block in `index.html`. A commented example at the start of the Research section shows every optional line: status, abstract, links and "Presented at".
 
