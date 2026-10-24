@@ -1,0 +1,64 @@
+# Pulls the CV from Overleaf, compiles it and saves it as files/CV.pdf.
+# Runs on the 1st of every month; to run it now, open the Actions tab,
+# pick "Update CV from Overleaf" and press "Run workflow".
+name: Update CV from Overleaf
+
+on:
+  schedule:
+    - cron: "0 6 1 * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pages: write
+
+concurrency: update-cv
+
+env:
+  OVERLEAF_PROJECT: 67f37f1dad6cefacc53eca90
+  MAIN_FILE: main.tex
+
+jobs:
+  update-cv:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Download the CV from Overleaf
+        env:
+          OVERLEAF_TOKEN: ${{ secrets.OVERLEAF_TOKEN }}
+        run: git clone --quiet "https://git:${OVERLEAF_TOKEN}@git.overleaf.com/${OVERLEAF_PROJECT}" cv-src
+
+      - name: Compile
+        run: |
+          # XeLaTeX if the source loads XeLaTeX-only font packages, otherwise pdfLaTeX (Overleaf's default)
+          if grep -rqsE --include='*.tex' --include='*.cls' --include='*.sty' 'fontspec|unicode-math|polyglossia' cv-src; then
+            engine=-xelatex
+          else
+            engine=-pdf
+          fi
+          echo "Compiling with latexmk $engine"
+          # Date the PDF by the last Overleaf edit, so an unchanged CV gives an identical file and no new commit
+          docker run --rm -v "$PWD/cv-src:/work" -w /work \
+            -e SOURCE_DATE_EPOCH="$(git -C cv-src log -1 --format=%ct)" -e FORCE_SOURCE_DATE=1 \
+            texlive/texlive:latest latexmk "$engine" -interaction=nonstopmode -halt-on-error "$MAIN_FILE"
+
+      - name: Save to files/CV.pdf
+        id: save
+        run: |
+          cp "cv-src/${MAIN_FILE%.tex}.pdf" files/CV.pdf
+          git add files/CV.pdf
+          if git diff --cached --quiet; then
+            echo "CV unchanged."
+            exit 0
+          fi
+          git -c user.name="github-actions[bot]" -c user.email="41898282+github-actions[bot]@users.noreply.github.com" \
+            commit --quiet -m "Update CV from Overleaf"
+          git push
+          echo "changed=true" >> "$GITHUB_OUTPUT"
+
+      - name: Rebuild the site
+        if: steps.save.outputs.changed == 'true'
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: gh api -X POST "repos/${{ github.repository }}/pages/builds" --silent
