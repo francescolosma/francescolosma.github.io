@@ -81,8 +81,9 @@
             <p class="presented"><em>Presented at:</em> Seminar One (05/2026), Conference Two (09/2026)</p>
           </article>
 
-          The Abstract button opens the <div class="abstract"> right after the buttons; leave both
-          out if there is no abstract. Any other button is an <a class="btn"> with its own label.
+          The Abstract button opens the <div class="abstract"> right after the buttons. It only shows
+          once that abstract has text, so an empty one can stay until the abstract is ready.
+          Any other button is an <a class="btn"> with its own label.
         -->
         <h2>Publications</h2>
 
@@ -90,7 +91,11 @@
           <p><strong><em>The Role of Telework for Productivity During and Post COVID-19</em></strong>, with C. Criscuolo, <a href = "https://sites.google.com/site/petergalswebsite/">P. Gal</a>, T. Leidecker and G. Nicoletti</p>
           <p class="status">Economie et Statistique / Economics and Statistics, 539, 51&ndash;72, 2023</p>
           <div class="buttons">
+            <button class="btn abstract-toggle" type="button" aria-expanded="false">Abstract</button>
             <a class="btn" href="https://doi.org/10.24187/ecostat.2023.539.2097" target="_blank" rel="noreferrer">Paper</a>
+          </div>
+          <div class="abstract" hidden>
+            <p>Motivated by the sudden adoption of telework in the wake of the COVID-19 pandemic, the OECD Global Forum on Productivity (GFP) undertook an online survey among managers and workers in 25 countries about their experience and expectations on telework, with a particular focus on productivity and well-being aspects. Respondents had an overall positive assessment from teleworking both for firm performance and for well-being, and wish to increase the share of teleworkers from pre-crisis levels. On average, the ideal amount of telework is envisaged around 2-3 days per week, in line with the idea that the benefits (e.g. less commuting, fewer distractions) and costs (e.g. impaired communication and knowledge flows) are balanced at an intermediate level of telework intensity. Further adaptive changes from management are also needed, such as the coordination of schedules and further investments in ICT tools and skills.</p>
           </div>
         </article>
 
@@ -98,30 +103,72 @@
 
         <article class="paper">
           <p><strong><em>The Impact of a Minimum Wage on Workers and Firms in Ethiopia&rsquo;s Industrial Parks</em></strong>, with <a href="https://www.stefanocaria.com/">S. Caria</a>, <a href = "https://sites.google.com/site/fransgerard/home">F. Gerard</a>, <a href = "https://lukashensel.com/">L. Hensel</a> and Fekadu Nigussie</p>
+          <div class="buttons">
+            <button class="btn abstract-toggle" type="button" aria-expanded="false">Abstract</button>
+          </div>
+          <div class="abstract" hidden>
+            <p><!-- paste the abstract here --></p>
+          </div>
         </article>
 
         <article class="paper">
           <p><strong><em>Matching on Additionality</em></strong>, with <a href="https://www.stefanocaria.com/">S. Caria</a>, <a href = "https://lukashensel.com/">L. Hensel</a>, <a href = "https://sites.google.com/site/pietgautier/">P. Gautier</a> and <a href = "https://www.marcwitte.com/">M. Witte</a></p>
+          <div class="buttons">
+            <button class="btn abstract-toggle" type="button" aria-expanded="false">Abstract</button>
+          </div>
+          <div class="abstract" hidden>
+            <p><!-- paste the abstract here --></p>
+          </div>
         </article>
 
         <article class="paper">
           <p><strong><em>Rootedness and Mental Health</em></strong>, with <a href = "https://jeanpaulcarvalho.com/">J.P. Carvalho</a> and <a href = "https://fjaellegaard.com/">M. Jensen</a></p>
+          <div class="buttons">
+            <button class="btn abstract-toggle" type="button" aria-expanded="false">Abstract</button>
+          </div>
+          <div class="abstract" hidden>
+            <p><!-- paste the abstract here --></p>
+          </div>
         </article>
 
         <article class="paper">
           <p><strong><em>Leading Universities and Labour Market Outcomes: The Role of Peers and Financial Barriers</em></strong>, with <a href = "https://fjaellegaard.com/">M. Jensen</a></p>
+          <div class="buttons">
+            <button class="btn abstract-toggle" type="button" aria-expanded="false">Abstract</button>
+          </div>
+          <div class="abstract" hidden>
+            <p><!-- paste the abstract here --></p>
+          </div>
         </article>
 
         <article class="paper">
           <p><strong><em>Layoffs</em></strong></p>
+          <div class="buttons">
+            <button class="btn abstract-toggle" type="button" aria-expanded="false">Abstract</button>
+          </div>
+          <div class="abstract" hidden>
+            <p><!-- paste the abstract here --></p>
+          </div>
         </article>
 
         <article class="paper">
           <p><strong><em>Green and Digital? Measuring the Twin Transition of Economic Sectors in OECD Countries</em></strong>, with <a href = "https://sites.google.com/view/flaviocalvino">F. Calvino</a> and <a href = "https://antoinedechezlepretre.github.io/">A. Dechezlepr&ecirc;tre</a></p>
+          <div class="buttons">
+            <button class="btn abstract-toggle" type="button" aria-expanded="false">Abstract</button>
+          </div>
+          <div class="abstract" hidden>
+            <p><!-- paste the abstract here --></p>
+          </div>
         </article>
 
         <article class="paper">
           <p><strong><em>Work-from-Home and Wages: What do Companies Think about Telework?</em></strong></p>
+          <div class="buttons">
+            <button class="btn abstract-toggle" type="button" aria-expanded="false">Abstract</button>
+          </div>
+          <div class="abstract" hidden>
+            <p><!-- paste the abstract here --></p>
+          </div>
         </article>
       </section>
 
@@ -168,7 +215,11 @@
           </p>
           <p class="status">OECD Science, Technology and Industry Working Papers, 2024</p>
           <div class="buttons">
+            <button class="btn abstract-toggle" type="button" aria-expanded="false">Abstract</button>
             <a class="btn" href="https://doi.org/10.1787/94dce592-en" target="_blank" rel="noreferrer">Working Paper</a>
+          </div>
+          <div class="abstract" hidden>
+            <p>While renewable energy adoption has accelerated globally, significant challenges remain in meeting ambitious deployment targets. This paper analyses bottlenecks in the renewable energy ecosystem and explores policy solutions by examining trade, innovation, M&A, jobs, and skills data. The analysis reveals three key findings: first, the renewable energy ecosystem spans multiple sectors beyond electricity production, with machinery, computer and electronics, and scientific and technical activities playing central roles in innovation activity and job creation; second, supply chain concentration is increasing for both capital goods and critical raw materials, creating dependencies on key supplier countries; and third, while innovation offers a pathway to address these dependencies through developing leading-edge manufacturing capabilities and material substitutes, patenting activity in renewable technologies is declining. Additionally, the sector faces potential skills shortages in engineering and technical trades. The findings suggest successful renewable energy deployment requires coordinated policy approaches addressing innovation support, supply chain resilience, and workforce development.</p>
           </div>
         </article>
 

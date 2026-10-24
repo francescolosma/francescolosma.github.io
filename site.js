@@ -6,9 +6,16 @@ document.querySelectorAll('a[href^="http"]').forEach((link) => {
   link.rel = "noreferrer";
 });
 
-// Abstract buttons show/hide the abstract right after their row of buttons
+// Abstract buttons show/hide the abstract right after their row of buttons.
+// A paper whose abstract is still empty shows no Abstract button.
 document.querySelectorAll(".abstract-toggle").forEach((button) => {
-  const abstract = button.closest(".buttons").nextElementSibling;
+  const row = button.closest(".buttons");
+  const abstract = row.nextElementSibling;
+  if (!abstract.textContent.trim()) {
+    button.remove();
+    if (!row.querySelector(".btn")) row.remove();
+    return;
+  }
   button.addEventListener("click", () => {
     const open = button.getAttribute("aria-expanded") === "true";
     button.setAttribute("aria-expanded", String(!open));
