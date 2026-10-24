@@ -16,6 +16,8 @@ To add a paper, copy an `<article class="paper">` block in `index.html`. A comme
 
 To add a section, copy a `<section>` with its `<hr>`, give it a new `id`, and add a matching `<a href="#id">` to the menu.
 
+`google4ee47707b196fabb.html` proves to Google Search Console that this is your site, so keep it (a copy is also on the `maintenance` branch). If you add a page, add its address to `sitemap.xml` too.
+
 Course slides live on their own page, `microeconomic-theory.html`, linked from the course title under Teaching. That page repeats the menu from `index.html`, so a change to the menu goes in both files.
 
 The slides are not stored in this repo: each [Slides] link is the deck's Dropbox link (`Class_MicroxDevelopment/Tutorials`), which always serves the latest compiled PDF. To add a deck, right-click its PDF in Finder > Copy Dropbox Link, copy a line in the Slides section of `microeconomic-theory.html`, paste the link, and change `dl=0` at its end to `raw=1` so it opens as a plain PDF. Only decks with a link are visible; the rest of the Dropbox folder stays private.
