@@ -39,7 +39,7 @@
             I am a DPhil (PhD) student in Economics at the
             <a href="https://www.economics.ox.ac.uk/">University of Oxford</a> and a member of
             <a href="https://www.univ.ox.ac.uk/">University College</a>, supervised by Prof.
-            <a href="https://www.economics.ox.ac.uk/people/barbara-petrongolo">Barbara Petrongolo</a>.
+            <a href="https://sites.google.com/site/barbarapetrongolo/">Barbara Petrongolo</a>.
           </p>
           <p>
             My research interests lie in labour and development economics, with a focus on matching,
@@ -70,20 +70,28 @@
           <article class="paper">
             <p><strong><em>Paper Title</em></strong>, with <a href="https://coauthor.site">Coauthor Name</a> and Another Coauthor</p>
             <p class="status">Revise &amp; Resubmit at Journal Name</p>
-            <details>
-              <summary>Abstract</summary>
+            <div class="buttons">
+              <button class="btn abstract-toggle" type="button" aria-expanded="false">Abstract</button>
+              <a class="btn" href="files/paper.pdf" target="_blank" rel="noreferrer">Working Paper</a>
+              <a class="btn" href="files/slides.pdf" target="_blank" rel="noreferrer">Slides</a>
+            </div>
+            <div class="abstract" hidden>
               <p>Abstract text.</p>
-            </details>
-            <p><a href="files/paper.pdf">[Working Paper]</a> <a href="files/slides.pdf">[Slides]</a></p>
+            </div>
             <p class="presented"><em>Presented at:</em> Seminar One (05/2026), Conference Two (09/2026)</p>
           </article>
+
+          The Abstract button opens the <div class="abstract"> right after the buttons; leave both
+          out if there is no abstract. Any other button is an <a class="btn"> with its own label.
         -->
         <h2>Publications</h2>
 
         <article class="paper">
           <p><strong><em>The Role of Telework for Productivity During and Post COVID-19</em></strong>, with C. Criscuolo, P. Gal, T. Leidecker and G. Nicoletti</p>
           <p class="status">Economie et Statistique / Economics and Statistics, 539, 51&ndash;72, 2023</p>
-          <p><a href="https://doi.org/10.24187/ecostat.2023.539.2097" target="_blank" rel="noreferrer">[Paper]</a></p>
+          <div class="buttons">
+            <a class="btn" href="https://doi.org/10.24187/ecostat.2023.539.2097" target="_blank" rel="noreferrer">Paper</a>
+          </div>
         </article>
 
         <h2>Work in Progress</h2>
@@ -93,11 +101,11 @@
         </article>
 
         <article class="paper">
-          <p><strong><em>Matching on Additionality</em></strong>, with S. Caria, L. Hensel, P. Gautier and M. Witte</p>
+          <p><strong><em>Matching on Additionality</em></strong>, with <a href="https://www.stefanocaria.com/">S. Caria</a>, L. Hensel, P. Gautier and M. Witte</p>
         </article>
 
         <article class="paper">
-          <p><strong><em>Rootedness and Mental Health</em></strong>, with J.P. Carvalho and M. Jensen</p>
+          <p><strong><em>Rootedness and Mental Health</em></strong>, with <a href = "https://jeanpaulcarvalho.com/">J.P. Carvalho</a> and <a href = "https://www.marijnensen.com/" target="_blank" rel="noreferrer">M. Jensen</a></p>
         </article>
 
         <article class="paper">
@@ -154,25 +162,45 @@
           Science, Technology and Innovation Directorate.
         </p>
 
-        <p>
-          <em>A Comprehensive Overview of the Renewable Energy Industrial Ecosystem</em>, with A. Dechezlepr&ecirc;tre,
-          H. Dernis, L. Diaz, G. Lalanne, S. Romaniega Sancho and L. Samek<br>
-          <strong>OECD Science, Technology and Industry Working Papers</strong> (2024)<br>
-          <a href="https://doi.org/10.1787/94dce592-en" target="_blank" rel="noreferrer">[Working Paper]</a>
-        </p>
+        <article class="paper">
+          <p>
+            <em>A Comprehensive Overview of the Renewable Energy Industrial Ecosystem</em>, with A. Dechezlepr&ecirc;tre,
+            H. Dernis, L. Diaz, G. Lalanne, S. Romaniega Sancho and L. Samek
+          </p>
+          <p><strong>OECD Science, Technology and Industry Working Papers</strong> (2024)</p>
+          <div class="buttons">
+            <a class="btn" href="https://doi.org/10.1787/94dce592-en" target="_blank" rel="noreferrer">Working Paper</a>
+          </div>
+        </article>
 
-        <p>
-          <em>Teleworking is here to stay and may raise productivity if implemented appropriately</em><br>
-          <strong>CEPR VoxEU</strong> (2022)<br>
-          <a href="https://cepr.org/voxeu/columns/teleworking-here-stay-and-may-raise-productivity-if-implemented-appropriately" target="_blank" rel="noreferrer">[Blog Post]</a>
-        </p>
+        <article class="paper">
+          <p><em>Teleworking is here to stay and may raise productivity if implemented appropriately</em></p>
+          <p><strong>CEPR VoxEU</strong> (2022)</p>
+          <div class="buttons">
+            <a class="btn" href="https://cepr.org/voxeu/columns/teleworking-here-stay-and-may-raise-productivity-if-implemented-appropriately" target="_blank" rel="noreferrer">Blog Post</a>
+          </div>
+        </article>
 
-        <p>
-          <em>Dopo-pandemia: cosa rester&agrave; dello smart working</em><br>
-          <strong>LaVoce</strong> (2022)<br>
-          <a href="https://lavoce.info/archives/94316/dopo-pandemia-cosa-restera-dello-smart-working/" target="_blank" rel="noreferrer">[Blog Post]</a>
-        </p>
+        <article class="paper">
+          <p><em>Dopo-pandemia: cosa rester&agrave; dello smart working</em></p>
+          <p><strong>LaVoce</strong> (2022)</p>
+          <div class="buttons">
+            <a class="btn" href="https://lavoce.info/archives/94316/dopo-pandemia-cosa-restera-dello-smart-working/" target="_blank" rel="noreferrer">Blog Post</a>
+          </div>
+        </article>
       </section>
     </main>
+
+    <script>
+      // Abstract buttons show/hide the abstract right after their row of buttons
+      document.querySelectorAll(".abstract-toggle").forEach((button) => {
+        const abstract = button.closest(".buttons").nextElementSibling;
+        button.addEventListener("click", () => {
+          const open = button.getAttribute("aria-expanded") === "true";
+          button.setAttribute("aria-expanded", String(!open));
+          abstract.hidden = open;
+        });
+      });
+    </script>
   </body>
 </html>
