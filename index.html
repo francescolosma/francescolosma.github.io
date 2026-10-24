@@ -4,61 +4,168 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Francesco Losma | Economics, University of Oxford</title>
-    <meta name="description" content="Francesco Losma, economics graduate student at the University of Oxford.">
+    <meta name="description" content="Francesco Losma, DPhil student in Economics at the University of Oxford.">
     <meta name="author" content="Francesco Losma">
     <link rel="canonical" href="https://francescolosma.github.io/">
     <link rel="icon" href="favicon.svg" type="image/svg+xml">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,400;0,600;0,700;1,400&amp;display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
   </head>
-  <body data-page="home">
-    <!-- The banner and the sidebar are filled in by site.js -->
-    <header class="site-header" id="site-header"></header>
+  <body>
+    <header class="topnav">
+      <nav class="nav-links" aria-label="Main">
+        <a href="#home">Home</a>
+        <a href="#research">Research</a>
+        <a href="#teaching">Teaching</a>
+        <a href="#policy">Policy</a>
+        <a href="files/CV.pdf" target="_blank" rel="noreferrer">CV</a>
+      </nav>
+      <!-- To add a profile (e.g. Google Scholar), copy one <a> and change its link and icon -->
+      <nav class="social-links" aria-label="Profiles">
+        <a href="https://www.linkedin.com/in/francesco-losma" aria-label="LinkedIn" target="_blank" rel="noreferrer">
+          <svg aria-hidden="true" viewBox="0 0 24 24"><path d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.35V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28ZM5.34 7.43a2.06 2.06 0 1 1 0-4.13 2.06 2.06 0 0 1 0 4.13ZM7.12 20.45H3.56V9h3.56v11.45Z"/></svg>
+        </a>
+        <a href="https://github.com/francescolosma" aria-label="GitHub" target="_blank" rel="noreferrer">
+          <svg aria-hidden="true" viewBox="0 0 24 24"><path d="M12 .5C5.65.5.5 5.65.5 12c0 5.08 3.29 9.39 7.86 10.91.58.11.79-.25.79-.56v-1.97c-3.2.7-3.87-1.54-3.87-1.54-.52-1.33-1.28-1.69-1.28-1.69-1.04-.71.08-.7.08-.7 1.15.08 1.76 1.18 1.76 1.18 1.03 1.76 2.69 1.25 3.35.96.1-.74.4-1.25.73-1.54-2.55-.29-5.24-1.28-5.24-5.69 0-1.26.45-2.29 1.18-3.09-.12-.29-.51-1.46.11-3.05 0 0 .97-.31 3.17 1.18a11 11 0 0 1 5.77 0c2.2-1.49 3.17-1.18 3.17-1.18.63 1.59.23 2.76.11 3.05.74.8 1.18 1.83 1.18 3.09 0 4.42-2.69 5.39-5.25 5.68.41.36.78 1.06.78 2.14v3.17c0 .31.21.68.8.56A11.5 11.5 0 0 0 23.5 12C23.5 5.65 18.35.5 12 .5Z"/></svg>
+        </a>
+      </nav>
+    </header>
 
-    <main class="page-shell">
-      <aside class="profile" id="profile" aria-label="Profile"></aside>
-
-      <section class="content">
-        <section class="section welcome-section" id="welcome">
-          <h2>Welcome</h2>
+    <main class="container">
+      <section class="profile" id="home">
+        <img class="profile-img" src="images/profile.jpg" alt="Portrait of Francesco Losma" width="620" height="620">
+        <div class="bio">
+          <h1>Francesco Losma</h1>
           <p>
-            I am a DPhil (PhD) student in Economics at the University of Oxford
-            and a member of University College. My research interests lie in labour and development economics,
-            with a focus on matching, search frictions, and amenities. I am also interested in the economics of
-            education, migration, and mental health.
+            I am a DPhil (PhD) student in Economics at the
+            <a href="https://www.economics.ox.ac.uk/">University of Oxford</a> and a member of
+            <a href="https://www.univ.ox.ac.uk/">University College</a>, supervised by Prof.
+            <a href="https://www.economics.ox.ac.uk/people/barbara-petrongolo">Barbara Petrongolo</a>.
           </p>
-        </section>
+          <p>
+            My research interests lie in labour and development economics, with a focus on matching,
+            search frictions, and amenities. I am also interested in the economics of education,
+            migration, and mental health.
+          </p>
+          <p>
+            Previously, I obtained an MPhil in Economics from the University of Oxford, an MSc in Economics
+            from <a href="https://www.unibocconi.it/en">Bocconi University</a> and a BSc in Finance from the
+            <a href="https://www.unicatt.it/">Catholic University of Milan</a>.
+            You can find my CV <a href="files/CV.pdf" target="_blank" rel="noreferrer">here</a>.
+          </p>
+          <p>
+            <strong>Contact information:</strong>
+            <a href="mailto:francesco.losma@economics.ox.ac.uk">francesco.losma@economics.ox.ac.uk</a>
+          </p>
+        </div>
+      </section>
 
-        <section class="section" id="education">
-          <h2>Education</h2>
+      <hr>
 
-          <!-- Copy an <article> block to add another degree -->
-          <article class="paper compact">
-            <h3>DPhil in Economics</h3>
-            <p class="status">University of Oxford, University College, 2024-2028 (Expected)</p>
+      <section id="research">
+        <!--
+          One <article> per paper. Every line except the title is optional:
+
+          <article class="paper">
+            <p><strong><em>Paper Title</em></strong>, with <a href="https://coauthor.site">Coauthor Name</a> and Another Coauthor</p>
+            <p class="status">Revise &amp; Resubmit at Journal Name</p>
+            <details>
+              <summary>Abstract</summary>
+              <p>Abstract text.</p>
+            </details>
+            <p><a href="files/paper.pdf">[Working Paper]</a> <a href="files/slides.pdf">[Slides]</a></p>
+            <p class="presented"><em>Presented at:</em> Seminar One (05/2026), Conference Two (09/2026)</p>
           </article>
+        -->
+        <h2>Publications</h2>
 
-          <article class="paper compact">
-            <h3>MPhil in Economics</h3>
-            <p class="status">University of Oxford, University College, 2022-2024</p>
-          </article>
+        <article class="paper">
+          <p><strong><em>The Role of Telework for Productivity During and Post COVID-19</em></strong>, with C. Criscuolo, P. Gal, T. Leidecker and G. Nicoletti</p>
+          <p class="status">Economie et Statistique / Economics and Statistics, 539, 51&ndash;72, 2023</p>
+          <p><a href="https://doi.org/10.24187/ecostat.2023.539.2097" target="_blank" rel="noreferrer">[Paper]</a></p>
+        </article>
 
-          <article class="paper compact">
-            <h3>MSc in Economics</h3>
-            <p class="status">Bocconi University, 2017-2020</p>
-          </article>
+        <h2>Work in Progress</h2>
 
-          <article class="paper compact">
-            <h3>BSc in Finance</h3>
-            <p class="status">Catholic University of Milan, 2014-2017</p>
-          </article>
+        <article class="paper">
+          <p><strong><em>The Impact of a Minimum Wage on Workers and Firms in Ethiopia&rsquo;s Industrial Parks</em></strong>, with S. Caria, F. Gerard, L. Hensel and F. Nigussie</p>
+        </article>
 
-        </section>
+        <article class="paper">
+          <p><strong><em>Matching on Additionality</em></strong>, with S. Caria, L. Hensel, P. Gautier and M. Witte</p>
+        </article>
+
+        <article class="paper">
+          <p><strong><em>Rootedness and Mental Health</em></strong>, with J.P. Carvalho and M. Jensen</p>
+        </article>
+
+        <article class="paper">
+          <p><strong><em>Leading Universities and Labour Market Outcomes: The Role of Peers and Financial Barriers</em></strong>, with M. Jensen</p>
+        </article>
+
+        <article class="paper">
+          <p><strong><em>Layoffs</em></strong></p>
+        </article>
+
+        <article class="paper">
+          <p><strong><em>Green and Digital? Measuring the Twin Transition of Economic Sectors in OECD Countries</em></strong>, with F. Calvino and A. Dechezlepr&ecirc;tre</p>
+        </article>
+
+        <article class="paper">
+          <p><strong><em>Work-from-Home and Wages: What do Companies Think about Telework?</em></strong></p>
+          <p class="status">MPhil thesis, University of Oxford, 2024</p>
+        </article>
+      </section>
+
+      <hr>
+
+      <section id="teaching">
+        <h2>Teaching</h2>
+
+        <p>
+          <strong>Development Economics Summer School</strong> (Graduate) - University of Oxford.<br>
+          Course instructor: Professor Stefano Caria. September 2026.
+        </p>
+
+        <p>
+          <strong>Microeconomics</strong> (Undergraduate) - Politecnico di Milano.<br>
+          Course instructor: Professor Lucia Tajoli. April&ndash;September 2022.
+        </p>
+
+        <p>
+          <strong>International Economics and Finance</strong> (Undergraduate) - Bocconi University.<br>
+          Course instructor: Professor Gianmarco Ottaviano. January&ndash;September 2021.
+        </p>
+      </section>
+
+      <hr>
+
+      <section id="policy">
+        <h2>Policy</h2>
+
+        <p>
+          Between 2019 and 2024 I worked at the OECD, in the Economics Department and later in the
+          Science, Technology and Innovation Directorate.
+        </p>
+
+        <p>
+          <em>A Comprehensive Overview of the Renewable Energy Industrial Ecosystem</em>, with A. Dechezlepr&ecirc;tre,
+          H. Dernis, L. Diaz, G. Lalanne, S. Romaniega Sancho and L. Samek<br>
+          <strong>OECD Science, Technology and Industry Working Papers</strong> (2024)<br>
+          <a href="https://doi.org/10.1787/94dce592-en" target="_blank" rel="noreferrer">[Working Paper]</a>
+        </p>
+
+        <p>
+          <em>Teleworking is here to stay and may raise productivity if implemented appropriately</em><br>
+          <strong>CEPR VoxEU</strong> (2022)<br>
+          <a href="https://cepr.org/voxeu/columns/teleworking-here-stay-and-may-raise-productivity-if-implemented-appropriately" target="_blank" rel="noreferrer">[Blog Post]</a>
+        </p>
+
+        <p>
+          <em>Dopo-pandemia: cosa rester&agrave; dello smart working</em><br>
+          <strong>LaVoce</strong> (2022)<br>
+          <a href="https://lavoce.info/archives/94316/dopo-pandemia-cosa-restera-dello-smart-working/" target="_blank" rel="noreferrer">[Blog Post]</a>
+        </p>
       </section>
     </main>
-
-    <script src="site.js"></script>
   </body>
 </html>
