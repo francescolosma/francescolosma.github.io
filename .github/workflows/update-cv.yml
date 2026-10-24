@@ -22,12 +22,16 @@ jobs:
   update-cv:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v5
 
       - name: Download the CV from Overleaf
         env:
           OVERLEAF_TOKEN: ${{ secrets.OVERLEAF_TOKEN }}
-        run: git clone --quiet "https://git:${OVERLEAF_TOKEN}@git.overleaf.com/${OVERLEAF_PROJECT}" cv-src
+        run: |
+          # Strip stray whitespace picked up when the token was pasted, and send it as a header rather than in the URL
+          auth=$(printf 'git:%s' "$(printf '%s' "$OVERLEAF_TOKEN" | tr -d '[:space:]')" | base64 -w0)
+          echo "::add-mask::$auth"
+          git -c http.extraHeader="Authorization: Basic $auth" clone --quiet "https://git.overleaf.com/${OVERLEAF_PROJECT}" cv-src
 
       - name: Compile
         run: |
