@@ -19,7 +19,11 @@ To add a section, copy a `<section>` with its `<hr>`, give it a new `id`, and ad
 
 `google4ee47707b196fabb.html` proves to Google Search Console that this is your site, so keep it (a copy is also on the `maintenance` branch). If you add a page, add its address to `sitemap.xml` too.
 
-Course slides live on their own page, `microeconomic-theory.html`, linked from the course title under Teaching. That page repeats the menu from `index.html`, so a change to the menu goes in both files.
+Course slides live on their own page, `microeconomic-theory.html`, linked from the course title under Teaching.
+
+The datasets collection lives on `data.html` (Data in the menu). To add a dataset, copy the commented example at the top of its Datasets section; datasets that cannot be downloaded or requested go under "Not publicly available".
+
+`microeconomic-theory.html` and `data.html` repeat the menu and profile icons from `index.html`, so a change to the menu goes in all three files.
 
 The slides are not stored in this repo: each [Slides] link is the deck's Dropbox link (`Class_MicroxDevelopment/Tutorials`), which always serves the latest compiled PDF. To add a deck, right-click its PDF in Finder > Copy Dropbox Link, copy a line in the Slides section of `microeconomic-theory.html`, paste the link, and change `dl=0` at its end to `raw=1` so it opens as a plain PDF. Only decks with a link are visible; the rest of the Dropbox folder stays private.
 

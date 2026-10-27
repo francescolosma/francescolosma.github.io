@@ -1,0 +1,139 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Data | Francesco Losma</title>
+    <meta name="description" content="Datasets for economics research: where to find them, their main variables, and papers that use them.">
+    <meta name="author" content="Francesco Losma">
+    <link rel="canonical" href="https://francescolosma.github.io/data.html">
+    <link rel="icon" href="favicon.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <!-- Same menu as index.html; if you change one, change both -->
+    <header class="topnav">
+      <nav class="nav-links" aria-label="Main">
+        <a href="index.html">Home</a>
+        <a href="index.html#research">Research</a>
+        <a href="index.html#teaching">Teaching</a>
+        <a href="index.html#policy">Policy</a>
+        <a href="data.html">Data</a>
+        <a href="files/CV.pdf" target="_blank" rel="noreferrer">CV</a>
+      </nav>
+      <nav class="social-links" aria-label="Profiles">
+        <a href="https://scholar.google.com/citations?user=Rabv2B8AAAAJ" aria-label="Google Scholar" target="_blank" rel="noreferrer">
+          <svg aria-hidden="true" viewBox="0 0 24 24"><path d="M5.242 13.769 0 9.5 12 0l12 9.5-5.242 4.269C17.548 11.249 14.978 9.5 12 9.5c-2.977 0-5.548 1.748-6.758 4.269ZM12 10a7 7 0 1 0 0 14 7 7 0 0 0 0-14Z"/></svg>
+        </a>
+        <a href="https://www.linkedin.com/in/francesco-losma" aria-label="LinkedIn" target="_blank" rel="noreferrer">
+          <svg aria-hidden="true" viewBox="0 0 24 24"><path d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.35V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28ZM5.34 7.43a2.06 2.06 0 1 1 0-4.13 2.06 2.06 0 0 1 0 4.13ZM7.12 20.45H3.56V9h3.56v11.45Z"/></svg>
+        </a>
+        <a href="https://github.com/francescolosma" aria-label="GitHub" target="_blank" rel="noreferrer">
+          <svg aria-hidden="true" viewBox="0 0 24 24"><path d="M12 .5C5.65.5.5 5.65.5 12c0 5.08 3.29 9.39 7.86 10.91.58.11.79-.25.79-.56v-1.97c-3.2.7-3.87-1.54-3.87-1.54-.52-1.33-1.28-1.69-1.28-1.69-1.04-.71.08-.7.08-.7 1.15.08 1.76 1.18 1.76 1.18 1.03 1.76 2.69 1.25 3.35.96.1-.74.4-1.25.73-1.54-2.55-.29-5.24-1.28-5.24-5.69 0-1.26.45-2.29 1.18-3.09-.12-.29-.51-1.46.11-3.05 0 0 .97-.31 3.17 1.18a11 11 0 0 1 5.77 0c2.2-1.49 3.17-1.18 3.17-1.18.63 1.59.23 2.76.11 3.05.74.8 1.18 1.83 1.18 3.09 0 4.42-2.69 5.39-5.25 5.68.41.36.78 1.06.78 2.14v3.17c0 .31.21.68.8.56A11.5 11.5 0 0 0 23.5 12C23.5 5.65 18.35.5 12 .5Z"/></svg>
+        </a>
+      </nav>
+    </header>
+
+    <main class="container">
+      <h1>Data</h1>
+      <p>
+        A growing collection of datasets I have come across in my research: where to find them,
+        their main variables, and papers that use them. Suggestions are welcome at
+        <a href="mailto:francesco.losma@economics.ox.ac.uk">francesco.losma@economics.ox.ac.uk</a>.
+      </p>
+
+      <hr>
+
+      <section id="datasets">
+        <h2>Datasets</h2>
+        <!--
+          One <article> per dataset, in alphabetical order. Every line except the name is optional:
+
+          <article class="paper" id="short-name">
+            <p><strong>Dataset Name (ACRONYM)</strong></p>
+            <p class="status">Provider &middot; Country &middot; Years or frequency &middot; How to access it</p>
+            <p><em>Main variables:</em> ...</p>
+            <p><em>Used in:</em> <a href="https://doi.org/...">Author and Author (2024)</a>, <a href="https://doi.org/...">Author et al. (2022)</a></p>
+            <div class="buttons">
+              <a class="btn" href="https://...">Get the data</a>
+            </div>
+          </article>
+        -->
+
+        <article class="paper" id="danish-registers">
+          <p><strong>Danish administrative register data</strong></p>
+          <p class="status">Statistics Denmark &middot; Denmark &middot; Whole population &middot; Restricted: through an authorised Danish research institution</p>
+          <p><em>Main variables:</em> demographics and family links, education, income and employment for the whole population, with workers linked to their employers.</p>
+          <p><em>Used in:</em> <a href="https://doi.org/10.3386/w33683">Almar, Friedrich, Reynoso, Schulz and Vejlin (2025)</a></p>
+          <div class="buttons">
+            <a class="btn" href="https://www.dst.dk/en/TilSalg/data-til-forskning">How to get access</a>
+          </div>
+        </article>
+
+        <article class="paper" id="sbu">
+          <p><strong>Survey of Business Uncertainty (SBU)</strong></p>
+          <p class="status">Federal Reserve Bank of Atlanta, with Steven Davis and Nicholas Bloom &middot; United States &middot; Monthly &middot; Aggregate data public, firm-level microdata on request</p>
+          <p><em>Main variables:</em> firms' current sales and employment, and their subjective probability distributions over sales and employment 12 months ahead, giving expected growth and uncertainty; a special question most months.</p>
+          <p><em>Used in:</em> <a href="https://doi.org/10.3386/w30197">Barrero, Bloom, Davis, Meyer and Mihaylov (2022)</a></p>
+          <div class="buttons">
+            <a class="btn" href="https://www.atlantafed.org/research/surveys/business-uncertainty">Get the data</a>
+          </div>
+        </article>
+
+        <article class="paper" id="sce">
+          <p><strong>Survey of Consumer Expectations (SCE)</strong></p>
+          <p class="status">Federal Reserve Bank of New York &middot; United States &middot; Monthly since 2013, rotating panel of about 1,300 household heads &middot; Public microdata</p>
+          <p><em>Main variables:</em> expectations about inflation, the labour market (job loss, job finding, earnings growth) and household finance, often as probability distributions; demographics and numeracy. The Labor Market Survey module, every four months, adds job search, job offers and offer wages, reservation wages, and satisfaction with pay and benefits.</p>
+          <p><em>Used in:</em> <a href="https://doi.org/10.1257/aer.20190808">Mueller, Spinnewijn and Topa (2021)</a>, <a href="https://doi.org/10.3982/ECTA18582">Faberman, Mueller, &#350;ahin and Topa (2022)</a>, <a href="https://doi.org/10.1016/B978-0-12-822927-9.00030-6">Mueller and Spinnewijn (2023)</a>, <a href="https://doi.org/10.3386/w33042">Pilossoph and Ryngaert (2024)</a></p>
+          <div class="buttons">
+            <a class="btn" href="https://www.newyorkfed.org/microeconomics/sce">Get the data</a>
+            <a class="btn" href="https://www.newyorkfed.org/microeconomics/sce/labor">Labor Market Survey</a>
+          </div>
+        </article>
+
+        <article class="paper" id="nj-unemployed">
+          <p><strong>Survey of Unemployed Workers in New Jersey</strong></p>
+          <p class="status">Alan Krueger and Andreas Mueller, Princeton University &middot; United States (New Jersey) &middot; 2009&ndash;2010 &middot; Public, with registration</p>
+          <p><em>Main variables:</em> an entry survey of 6,025 unemployment insurance recipients (demographics, income and wealth) and a weekly follow-up with 39,201 person-weeks on job search activity, reservation wages and job offers.</p>
+          <p><em>Used in:</em> <a href="https://doi.org/10.1257/aer.20190808">Mueller, Spinnewijn and Topa (2021)</a></p>
+          <div class="buttons">
+            <a class="btn" href="https://oprdata.princeton.edu/Archive/NJUI">Get the data</a>
+          </div>
+        </article>
+
+        <article class="paper" id="uas">
+          <p><strong>Understanding America Study (UAS)</strong></p>
+          <p class="status">University of Southern California &middot; United States &middot; Probability-based internet panel of about 15,000 people &middot; Public, with registration</p>
+          <p><em>Main variables:</em> a wide range of longitudinal survey modules on economic, social and health outcomes, with some linked administrative and wearable-device data.</p>
+          <p><em>Used in:</em> <a href="https://doi.org/10.3386/w35925">Benjamin, Cooper, Heffetz, Kimball and Zhou (2026)</a></p>
+          <div class="buttons">
+            <a class="btn" href="https://uasdata.usc.edu/">Get the data</a>
+          </div>
+        </article>
+      </section>
+
+      <hr>
+
+      <section id="not-public">
+        <h2>Not publicly available</h2>
+        <p>Data used in papers I have read that cannot be downloaded or requested, listed so the source is known.</p>
+
+        <article class="paper" id="india-job-adverts">
+          <p><strong>Indian online job adverts</strong></p>
+          <p class="status">Scraped from India's largest online job platform &middot; India &middot; 2010&ndash;2019</p>
+          <p><em>Main variables:</em> 15.5 million job postings in white-collar services.</p>
+          <p><em>Used in:</em> <a href="https://copestake.info/workingpaper/akai/AKAI.pdf">Copestake, Marczinek, Pople and Stapleton (2024)</a></p>
+        </article>
+
+        <article class="paper" id="us-retailer">
+          <p><strong>Personnel records of a large US retailer</strong></p>
+          <p class="status">Confidential company data &middot; United States</p>
+          <p><em>Main variables:</em> workers' wages, raises and quits.</p>
+          <p><em>Used in:</em> <a href="https://doi.org/10.1257/aer.20160232">Dube, Giuliano and Leonard (2019)</a></p>
+        </article>
+      </section>
+    </main>
+
+    <script src="site.js"></script>
+  </body>
+</html>
