@@ -38,14 +38,14 @@
       <h1>Data</h1>
       <p>
         A growing collection of datasets I have come across in my research: where to find them,
-        their main variables, and papers that use them. Suggestions are welcome at
+        their main variables, and (a small list of) papers that use them. Suggestions are welcome at
         <a href="mailto:francesco.losma@economics.ox.ac.uk">francesco.losma@economics.ox.ac.uk</a>.
       </p>
 
       <hr>
 
       <section id="datasets">
-        <h2>Datasets</h2>
+        <h2>Public Datasets</h2>
         <!--
           One <article> per dataset, in alphabetical order. Every line except the name is optional:
 
@@ -60,13 +60,24 @@
           </article>
         -->
 
-        <article class="paper" id="danish-registers">
-          <p><strong>Danish administrative register data</strong></p>
-          <p class="status">Statistics Denmark &middot; Denmark &middot; Whole population &middot; Restricted: through an authorised Danish research institution</p>
-          <p><em>Main variables:</em> demographics and family links, education, income and employment for the whole population, with workers linked to their employers.</p>
-          <p><em>Used in:</em> <a href="https://doi.org/10.3386/w33683">Almar, Friedrich, Reynoso, Schulz and Vejlin (2025)</a></p>
+        <article class="paper" id="nlsy79">
+          <p><strong>National Longitudinal Survey of Youth 1979 (NLSY79)</strong></p>
+          <p class="status">U.S. Bureau of Labor Statistics &middot; United States &middot; 12,686 people born 1957&ndash;1964, interviewed every year from 1979 to 1994 and every two years since &middot; Public microdata, geographic detail on application</p>
+          <p><em>Main variables:</em> week-by-week employment histories, wages and earnings, education and training, family background, marriage, fertility and child care, health, assets and income, and participation in government programmes; cognitive test scores (ASVAB, from which the AFQT is derived) taken in 1980. A companion survey follows the respondents' children (NLSY79 Child and Young Adult).</p>
+          <p><em>Used in:</em> <a href="https://doi.org/10.1093/qje/qjx022">Deming (2017)</a>, <a href="https://doi.org/10.1257/mac.20160241">Guvenen, Kuruscu, Tanaka and Wiczer (2020)</a>, <a href="https://doi.org/10.1257/aer.20162002">Lise and Postel-Vinay (2020)</a></p>
           <div class="buttons">
-            <a class="btn" href="https://www.dst.dk/en/TilSalg/data-til-forskning">How to get access</a>
+            <a class="btn" href="https://www.nlsinfo.org/content/cohorts/nlsy79">Get the data</a>
+          </div>
+        </article>
+
+        <article class="paper" id="onet">
+          <p><strong>Occupational Information Network (O*NET)</strong></p>
+          <p class="status">U.S. Department of Labor, Employment and Training Administration &middot; United States &middot; About 900 occupations, updated quarterly &middot; Public, free download</p>
+          <p><em>Main variables:</em> for each occupation, ratings of the skills, abilities and knowledge it requires, its work activities, work context and work styles, the education, training and experience needed, task statements, and the tools and technology used. Often merged with worker surveys such as the NLSY79 to measure the skill or task content of jobs.</p>
+          <p><em>Used in:</em> <a href="https://doi.org/10.1093/qje/qjx022">Deming (2017)</a>, <a href="https://doi.org/10.1257/mac.20160241">Guvenen, Kuruscu, Tanaka and Wiczer (2020)</a>, <a href="https://doi.org/10.1257/aer.20162002">Lise and Postel-Vinay (2020)</a></p>
+          <div class="buttons">
+            <a class="btn" href="https://www.onetonline.org/">Get the data</a>
+            <a class="btn" href="https://www.onetcenter.org/database.html">Download the database</a>
           </div>
         </article>
 
@@ -112,26 +123,6 @@
         </article>
       </section>
 
-      <hr>
-
-      <section id="not-public">
-        <h2>Not publicly available</h2>
-        <p>Data used in papers I have read that cannot be downloaded or requested, listed so the source is known.</p>
-
-        <article class="paper" id="india-job-adverts">
-          <p><strong>Indian online job adverts</strong></p>
-          <p class="status">Scraped from India's largest online job platform &middot; India &middot; 2010&ndash;2019</p>
-          <p><em>Main variables:</em> 15.5 million job postings in white-collar services.</p>
-          <p><em>Used in:</em> <a href="https://copestake.info/workingpaper/akai/AKAI.pdf">Copestake, Marczinek, Pople and Stapleton (2024)</a></p>
-        </article>
-
-        <article class="paper" id="us-retailer">
-          <p><strong>Personnel records of a large US retailer</strong></p>
-          <p class="status">Confidential company data &middot; United States</p>
-          <p><em>Main variables:</em> workers' wages, raises and quits.</p>
-          <p><em>Used in:</em> <a href="https://doi.org/10.1257/aer.20160232">Dube, Giuliano and Leonard (2019)</a></p>
-        </article>
-      </section>
     </main>
 
     <script src="site.js"></script>
